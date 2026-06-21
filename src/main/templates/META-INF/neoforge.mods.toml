@@ -18,9 +18,6 @@ description='''
 Replaces sky in ad Ad Astra dimensions with StellarView sky
 '''
 
-[[mixins]]
-config="${mod_id}.mixins.json"
-
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
