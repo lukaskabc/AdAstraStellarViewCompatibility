@@ -73,5 +73,5 @@ Disables Ad Astra custom sky and configures StellarView for every planet.
 The planets are configured in the same way as for Stellaris compatibility
 
 <a href="https://github.com/lukaskabc/Stellaris-StellarView-Compatibility">
-  <img src="https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=GitHub" alt="GitHub">
+  <img src="https://img.shields.io/badge/Stellaris_Compatibility-grey?style=for-the-badge&logo=GitHub" alt="GitHub">
 </a>

@@ -43,7 +43,7 @@ config="${mod_id}.mixins.json"
     side="CLIENT"
 
 [[dependencies.${mod_id}]]
-    modId="adastra"
+    modId="ad_astra"
     type="required"
     versionRange="[${adastra_version},)"
     ordering="AFTER"
