@@ -67,7 +67,18 @@ Disables Ad Astra custom sky and configures StellarView for every planet.
 </table>
 
 ## Implemented planets/dimensions
+- Earth (overworld)
+- Earth Orbit
+- Mars
+- Mars Orbit
+- Mercury
+- Mercury Orbit
+- Moon 
+- Moon Orbit 
 
+Missing:
+- Glacio
+- Glacio orbit
 
 ## Notes
 The planets are configured in the same way as for Stellaris compatibility
