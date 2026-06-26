@@ -37,9 +37,9 @@ repositories {
         }
     }
 
-    maven {
+    /*maven {
         url = uri("${System.getProperty('user.home')}/IdeaProjects/Ad-Astra/build/libs")
-    }
+    }*/
 
     mavenLocal()
 }
@@ -108,29 +108,31 @@ configurations {
 }
 
 dependencies {
-    implementation "maven.modrinth:stellarview:${stellarview_modrinth_version}"
+    runtimeOnly "maven.modrinth:stellarview:${stellarview_modrinth_version}"
+    runtimeOnly "maven.modrinth:stellar-view-mixin-renderer:${stellarview_mixin_renderer_modrinth_version}"
 //    implementation "maven.modrinth:ad-astra:${adastra_modrinth_version}"
 
     // local compiled adastra for 1.21.1
-    implementation('earth.terrarium.adastra:adastra:1.16.6') {
+    /*runtimeOnly('earth.terrarium.adastra:adastra:1.16.6') {
         capabilities {
             requireCapability 'earth.terrarium.adastra:adastra-neoforge-data:1.16.6'
         }
-    }
+    }*/
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
-            minecraft_version      : minecraft_version,
-            minecraft_version_range: minecraft_version_range,
-            neo_version            : neo_version,
-            loader_version_range   : loader_version_range,
-            mod_id                 : mod_id,
-            mod_name               : mod_name,
-            mod_license            : mod_license,
-            mod_version            : mod_version,
-            stellarview_version    : stellarview_version,
-            adastra_version        : adastra_version
+            minecraft_version                   : minecraft_version,
+            minecraft_version_range             : minecraft_version_range,
+            neo_version                         : neo_version,
+            loader_version_range                : loader_version_range,
+            mod_id                              : mod_id,
+            mod_name                            : mod_name,
+            mod_license                         : mod_license,
+            mod_version                         : mod_version,
+            stellarview_version                 : stellarview_version,
+            adastra_version                     : adastra_version,
+            stellarview_mixin_renderer_version  : stellarview_mixin_renderer_version
     ]
     inputs.properties replaceProperties
     expand replaceProperties

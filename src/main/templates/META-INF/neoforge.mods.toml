@@ -46,3 +46,9 @@ Replaces sky in ad Ad Astra dimensions with StellarView sky
     ordering="AFTER"
     side="CLIENT"
 
+[[dependencies.${mod_id}]]
+    modId="stellarview_mixin_renderer"
+    type="required"
+    versionRange="[${stellarview_mixin_renderer_version},)"
+    ordering="AFTER"
+    side="CLIENT"
