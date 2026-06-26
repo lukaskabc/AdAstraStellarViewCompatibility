@@ -74,9 +74,7 @@ Disables Ad Astra custom sky and configures StellarView for every planet.
 - Mercury
 - Mercury Orbit
 - Moon 
-- Moon Orbit 
-
-Missing:
+- Moon Orbit
 - Glacio
 - Glacio orbit
 
