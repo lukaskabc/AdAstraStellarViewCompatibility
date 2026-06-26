@@ -10,8 +10,8 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://github.com/lukaskabc/AdAstraStellarViewCompatibility"
 
-# A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="examplemod.png" #optional
+
+logoFile="logo.png"
 
 authors="lukaskabc"
 description='''
