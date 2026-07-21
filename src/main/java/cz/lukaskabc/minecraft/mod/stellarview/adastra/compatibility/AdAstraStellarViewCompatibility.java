@@ -4,11 +4,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
 
-@Mod(AdAstraStellarviewcompatibility.MODID)
-public class AdAstraStellarviewcompatibility {
+@Mod(AdAstraStellarViewCompatibility.MODID)
+public class AdAstraStellarViewCompatibility {
     public static final String MODID = "adastra_stellarview_compatibility";
 
-    public AdAstraStellarviewcompatibility(IEventBus modEventBus, ModContainer modContainer) {
+    public AdAstraStellarViewCompatibility(IEventBus modEventBus, ModContainer modContainer) {
 
     }
 }
