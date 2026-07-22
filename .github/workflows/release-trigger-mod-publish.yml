@@ -1,0 +1,30 @@
+# This workflow is automatically triggered once a GitHub release is RELEASED
+#   The workflow will only trigger to NON-PRE-RELEASES
+#   If you create a GitHub pre-release it will NOT be uploaded to other platforms, this may be usefull for dev builds.
+#   If you change a pre-release to a normal release, it WILL be uploaded.
+#
+
+name: Upload the mod to several platforms
+on:
+  release:
+    types: [released]
+
+concurrency:
+  group: ModPublish-${{ github.event.release.tag_name }}
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  publish-mod:
+    name: Upload the mod to several platforms
+    uses: lukaskabc/Minecraft-Mod-Publish-Workflows/.github/workflows/mod-publish.yml@v2.0.2
+    with:
+      workflow_ref: "v2.0.2"
+
+      # The tag with associated release dynamically pulled from the GitHub event payload
+      release_tag: ${{ github.event.release.tag_name }}
+
+    secrets:
+      CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+      MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

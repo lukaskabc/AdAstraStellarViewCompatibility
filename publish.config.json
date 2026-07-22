@@ -1,0 +1,58 @@
+{
+  "client": true,
+  "server": false,
+  "curseforge_enabled": true,
+  "modrinth_enabled": true,
+  "discord_enabled": false,
+  "discord_announce_nightly_builds": false,
+  "curseforge_project_slug": "adastra-stellarview-compatibility",
+  "curseforge_project_id": "1584126",
+  "modrinth_project_id": "mjJYi3sy",
+  "default_release_type": "Stable",
+  "artifacts": {
+    "1.21.1": {
+      "file_glob": "build/libs/*-1.21.1-{version}.jar",
+      "branch": "main",
+      "loaders": [
+        "Neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "java_version": "21"
+    }
+  },
+  "common_dependencies": {
+    "curseforge": [
+      {
+        "slug": "stellar-view-mixin-renderer",
+        "dependency_type": "Required"
+      },
+      {
+        "slug": "stellarview",
+        "dependency_type": "Required"
+      },
+      {
+        "slug": "ad-astra",
+        "dependency_type": "Required"
+      }
+    ],
+    "modrinth": [
+      {
+        "slug": "stellar-view-mixin-renderer",
+        "id": "gJ5LPGfO",
+        "dependency_type": "Required"
+      },
+      {
+        "slug": "stellarview",
+        "id": "Iairjv0A",
+        "dependency_type": "Required"
+      },
+      {
+        "slug": "ad-astra",
+        "dependency_type": "Required",
+        "id": "3ufwT9JF"
+      }
+    ]
+  }
+}

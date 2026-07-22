@@ -1,0 +1,37 @@
+# To create a new draft release, go to your repository > Actions
+#   Select the "Draft new GitHub release" action in the left and click the "Run workflow" button in the right
+#
+
+name: Draft new GitHub release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Mod version to release, must follow semantic versioning at semver.org (e.g. 2.0.6-hotfix.1). Must NOT contain leading "v".
+        required: true
+        type: string
+      validate-only:
+        description: Only parse and validate the file publish.config.json
+        required: false
+        type: boolean
+        default: false
+
+# permissions required to create the GitHub release draft and to commit version bumps to the repository
+permissions:
+  contents: write
+
+concurrency:
+  group: ModPublish-v${{ inputs.version }}
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  draft-release:
+    name: Draft new GitHub release
+    uses: lukaskabc/Minecraft-Mod-Publish-Workflows/.github/workflows/draft-release.yml@v2.0.2
+    with:
+      workflow_ref: "v2.0.2"
+
+      # Passthrough for workflow dispatch inputs, do not change
+      version: ${{ inputs.version }}
+      validate-only: ${{ inputs.validate-only }}
