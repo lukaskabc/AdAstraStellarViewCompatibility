@@ -18,6 +18,8 @@
 	"create_horizon": false,
 	"create_void": false,
 	"stars": {
-		"during_day": true
+		"during_day": true,
+		"ignore_rain": true,
+		"ignore_fog": true
 	}
 }

@@ -16,6 +16,8 @@
 		"max_visible_size": 20
 	},
 	"stars": {
-		"during_day": true
+		"during_day": true,
+		"ignore_rain": true,
+		"ignore_fog": true
 	}
 }

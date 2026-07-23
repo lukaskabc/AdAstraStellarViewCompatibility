@@ -14,5 +14,10 @@
 		"max_brightness": 1,
 		"min_visible_size": 10,
 		"max_visible_size": 20
+	},
+	"stars": {
+		"during_day": true,
+		"ignore_rain": true,
+		"ignore_fog": true
 	}
 }
