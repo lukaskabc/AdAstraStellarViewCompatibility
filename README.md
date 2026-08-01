@@ -76,7 +76,10 @@ Disables Ad Astra custom sky and configures StellarView for every planet.
 - Moon 
 - Moon Orbit
 - Glacio
-- Glacio orbit
+- Glacio Orbit
+- Venus Orbit
+
+Venus is not included because the planet has dense atmosphere and sky is not visible.
 
 ## Notes
 The planets are configured in the same way as for Stellaris compatibility
