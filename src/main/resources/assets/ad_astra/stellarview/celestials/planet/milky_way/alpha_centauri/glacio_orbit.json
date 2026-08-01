@@ -1,6 +1,6 @@
 {
   "parent": {
-    "location": "ad_astra:planet/milky_way/alpha_centauri/glacio",
+    "location": "stellarview:moon/milky_way/alpha_centauri/proxima_centauri_c/glacio",
     "relative": true
   },
   "coords": {
